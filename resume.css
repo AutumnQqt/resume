@@ -1,0 +1,63 @@
+body {
+	background: black;
+	color: white;
+	margin: 0;
+}
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.topBarNav {
+	padding: 20px;
+
+}
+.topBarNav >nav {
+	float: right;
+	padding-top: 7px;
+}
+.topBarNav >nav >ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 3px;
+}
+.topBarNav >nav >ul >li {
+	list-style: none;
+	float: left;
+	margin: 0 17px;
+}
+.topBarNav >nav >ul >li >a {
+	display: block;
+	color: #b7b7b7;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid transparent;
+	padding: 5px 0;
+}
+.topBarNav >nav >ul >li>a:hover {
+	border-bottom : 3px solid #e06567;
+}
+
+.topBarNav > a {
+	float: left;
+	font-family: 'Arial Black';
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 4px;
+}
+.topBarNav > a > .rs {
+	color: #e6686a;
+	margin-right: 4px;
+}
+.topBarNav > a > .card {
+	color: #b7b7b7;
+}
+
+
