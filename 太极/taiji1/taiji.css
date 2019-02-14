@@ -1,0 +1,47 @@
+.div1 {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: relative;
+}
+.div2 {
+	width: 0;
+	height: 0;
+	border: 50px solid black;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-radius: 50%;
+	margin-left: 100px;
+	position: absolute;
+	display: inline-block;
+}
+.div2Bg {
+	width: 0;
+	height: 0;
+	border: 100px solid red;
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid transparent;
+	border-radius: 50%;
+	position: absolute;
+}
+.div3 {
+	width: 0;
+	height: 0;
+	border: 50px solid red;
+	margin-top: 100px;
+	border-left: 50px solid transparent;
+	border-top: 50px solid transparent;
+	border-radius: 50%;
+	position: absolute;
+}
+.div3Bg {
+	width: 0;
+	height: 0;
+	border: 100px solid black;
+	border-left: 100px solid transparent;
+	border-top: 100px solid transparent;
+	border-radius: 50%;
+	position: absolute;
+}

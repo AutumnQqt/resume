@@ -1,0 +1,29 @@
+.taiJi {
+	width: 200px;
+	height: 200px;
+	border: 2px solid rgb(254, 155, 113);
+	border-bottom: 100px solid rgb(254, 155, 113);
+	background-color: rgb(27, 153, 139);
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	margin: 100px 100px;
+}
+.taiJi > div {
+	width: 98px;
+	height: 98px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	top: 50%;
+	position: absolute;
+}
+.innerLeft {
+	background-color: rgb(27, 153, 139);
+	border: 40px solid rgb(254, 155, 113);
+}
+.innerRight {
+	background-color: rgb(254, 155, 113);
+	border: 40px solid rgb(27, 153, 139);
+	left: 50%;
+}
