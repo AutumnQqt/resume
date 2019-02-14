@@ -3,6 +3,16 @@
 <head>
 	<title>陈秋钿个人简历</title>
 	<link rel="stylesheet" type="text/css" href="./resume.css">
+	<style type="text/css">
+	    .icon {
+	       width: 22px;
+	       height: 22px;
+	       vertical-align: -0.15em;
+	       fill: white;
+	       overflow: hidden;
+	    }
+	</style>
+	<script type="text/javascript" src="//at.alicdn.com/t/font_1044514_ercmcwgpkj.js"></script>
 </head>
 <body>
 	<div class="topBarNav clearfix">
@@ -21,19 +31,19 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="banner" style="background-image: #"></div>
+	<div class="banner"><div class="mask"></div></div>
 	<main>
-		<div class="card">
-			<div>
+		<div class="userCard">
+			<div class="wrapCard clearfix">
 				<div class="img">
-					<img src="#" alt="头像">
+					<img src="./img/avatar.jpg" alt="头像">
 				</div>
 				<div class="text">
-					<span>你好!</span>
+					<span>Hello!<span class="triangle"></span></span>
 					<h1>陈秋钿</h1>
 					<p>前端开发工程师</p>
 					<hr>
-					<dd>
+					<div class="clearfix">
 						<dl>学校</dl>
 						<dt>广东工业大学</dt>
 						<dl>年龄</dl>
@@ -44,16 +54,25 @@
 						<dt>772603532@qq.com</dt>
 						<dl>电话</dl>
 						<dt>18813295226</dt>
-					</dd>
+					</div>
 				</div>
 			</div>
 			<footer>
-				<ul>
-					<li><img src="#" alt="github"></li>
-					<li><img src="#" alt="github"></li>
-					<li><img src="#" alt="github"></li>
-					<li><img src="#" alt="github"></li>
-				</ul>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+				    	<use xlink:href="#icon-git"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+					    <use xlink:href="#icon-weibo"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+					    <use xlink:href="#icon-jianshu_circle"></use>
+					</svg>					
+				</a>
 			</footer>
 		</div>
 		<a class="button" href="#">点击下载PDF简历</a>

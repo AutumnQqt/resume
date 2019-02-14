@@ -1,7 +1,8 @@
 body {
-	background: black;
-	color: white;
+	background: rgb(239, 239, 239);
 	margin: 0;
+	font-family: "微软雅黑";
+	font-weight: normal;
 }
 .clearfix::after {
 	content: '';
@@ -12,10 +13,19 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+li {
+	list-style: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
 
 .topBarNav {
 	padding: 20px;
-
+	position: fixed;
+	width: 100%;
+	box-sizing: border-box;
 }
 .topBarNav >nav {
 	float: right;
@@ -27,7 +37,6 @@ a {
 	margin-top: 3px;
 }
 .topBarNav >nav >ul >li {
-	list-style: none;
 	float: left;
 	margin: 0 17px;
 }
@@ -61,3 +70,106 @@ a {
 }
 
 
+.banner {
+	height: 515px;
+	background-image: url("./img/rs-cover.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.banner .mask {
+	background-color: rgba(0,0,0,0.7);
+	height: 515px;
+}
+
+
+.userCard {
+	background-color: rgb(255, 255, 255);
+	width: 940px;
+	margin: 0 auto;
+	
+	box-sizing: border-box;
+}
+.wrapCard {
+	padding: 50px;
+}
+.userCard .img img {
+	width: 299px;
+	height: 347px;
+}
+.userCard .img {
+	float: left;
+}
+.userCard .text {
+	float: left;
+	margin-left: 65px;
+}
+.userCard .text > span {
+	background-color: rgb(230, 104, 106);
+	font-family: "Calibri";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	padding: 4px 14px;
+	display: inline-block;
+	border-radius: 5%;
+	position: relative;
+}
+.userCard .text > span .triangle {
+	width: 0;
+	height: 0;
+	border: 5px solid rgb(230, 104, 106);
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid transparent;
+	/*display: inline-block;*/
+	position: absolute;
+	left: 4px;
+	top: 100%;
+}
+.userCard .text {
+	width: 470px;
+}
+.userCard .text h1 {
+	font-family: "微软雅黑";
+	font-weight: normal;
+	padding-top: 24px;
+	padding-left: 5px;
+	font-size: 30px;
+
+}
+.userCard .text p {
+	padding-bottom: 24px; 
+	padding-top: 4px; 
+}
+.userCard .text hr {
+	border: none;
+	border-top: 1px solid #EFEFEF;
+	margin-bottom: 28px;
+}
+
+.userCard .text dt,
+.userCard .text dl {
+	float: left;
+	/*width: 40%;*/
+	margin-bottom: 14px;
+}
+.userCard .text dl {
+	width: 30%;
+}
+.userCard .text dt {
+	width: 50%;
+}
+
+.userCard > footer {
+	background-color: rgb(230, 104, 106);
+	height: 72px;
+	text-align: center;
+}
+.userCard > footer a {
+	padding: 4px;
+	display: inline-block;
+	margin: 0 30px ;
+	margin-top: 22px;
+}
+.userCard > footer a:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
+}
