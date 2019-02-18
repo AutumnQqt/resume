@@ -13,7 +13,7 @@
 	    }
 	
 	</style>
-	<script type="text/javascript" src="//at.alicdn.com/t/font_1044514_v6pvjhiz3x.js"></script>
+	<!-- <script type="text/javascript" src="//at.alicdn.com/t/font_1044514_v6pvjhiz3x.js"></script> -->
 </head>
 <body>
 	<div class="topBarNav clearfix">
@@ -76,34 +76,83 @@
 				</a>
 			</footer>
 		</div>
-		<a class="button" href="#">点击下载PDF简历</a>
-		<p>你好，我叫陈秋钿，来自广东工业大学，技能以后再补上</p>
+		<div class="downloadResume-wrapper">
+			<a class="downloadResume" target="_blank" href="./img/myResume.pdf" download>点击下载PDF简历</a>
+			<p class="selfIntroduction">陈秋钿，来自广东工业大学，数字媒体技术<br>技能：前端开发 JavaScript 等</p>
+		</div>
 	</main>
-	<section>
-		//表示章节
+	<section class="skill">
+		<!-- 表示章节 -->
 		<h2>技能</h2>
-		<ol>
-			<li>HTML 5 &amp CSS3</li>
-			<li>JavaScript</li>
-			<li>jQuery</li>
-			<li>Vue</li>
-			<li>React</li>
-			<li>HTTP</li>
+		<ol class="clearfix">
+			<li>
+				HTML 5 &amp CSS3
+				<div class="progressBar">
+					<div class="progress" style="width:60%;"></div>
+				</div>
+			</li>
+			<li>
+				JavaScript
+				<div class="progressBar">
+						<div class="progress" style="width:70%;"></div>
+					</div>
+			</li>
+			<li>
+				jQuery
+				<div class="progressBar">
+					<div class="progress" style="width:50%;"></div>
+				</div>
+			</li>
+			<li>
+				Vue
+				<div class="progressBar">
+					<div class="progress" style="width:55%;"></div>
+				</div>
+			</li>
+			<li>
+				React
+				<div class="progressBar">
+					<div class="progress" style="width:30%;"></div>
+				</div>
+			</li>
+			<li>
+				HTTP
+				<div class="progressBar">
+					<div class="progress" style="width:30%;"></div>
+				</div>
+			</li>
 		</ol>
 	</section>
-	<section>
+	<section class="portfolio">
 		<h2>作品集</h2>
 		<nav>
-			<ol>
-				<li>所有</li>
-				<li>框架</li>
-				<li>原生JavaScript &amp CSS</li>
+			<ol class="clearfix">
+				<li id="all">所有</li>
+				<li id="frame">框架</li>
+				<li id="proto">原生JavaScript &amp CSS</li>
 			</ol>
+			<div class="portfolioBarWrap">
+				<div id="portfolioBar" class="portfolioBar state-1"></div>
+			</div>
+			<script>
+				all.onclick = function(){
+					portfolioBar.className="portfolioBar state-1";
+				}
+				frame.onclick = function(){
+					portfolioBar.className="portfolioBar state-2";
+				}
+				proto.onclick = function(){
+					portfolioBar.className="portfolioBar state-3";
+				}
+			</script>
 		</nav>
-		<div class="works">
-			<div class="big"></div>
-			<div class="small"></div>
-			<div class="small"></div>
+		<div class="works clearfix">
+			<div class="big"><img src="./img/1.jpg" alt="作品1"></div>
+			<div class="small">
+				<div class="small1"><img src="./img/2.jpg" alt="作品2"></div>
+				<div class="small2"><img src="./img/3.jpg" alt="作品3"></div>
+			</div>
+			
 		</div>
 	</section>
 </body>
