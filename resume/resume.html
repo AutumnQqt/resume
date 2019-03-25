@@ -24,12 +24,26 @@
 		<a href="#" alt="logo" class="logo">
 			<span class="rs">RS</span><span class="card">card</span>
 		</a>
-		<nav>
+		<nav id="topNav" class="topNav">
 			<ul class="clearfix">
-				<li><a href="#">关于</a></li>
-				<li><a href="#">技能</a></li>
-				<li><a href="#">作品</a></li>
-				<li><a href="#">博客</a></li>
+				<li><a href="#siteAbout">关于</a></li>
+				<li><a href="#siteSkills">技能</a></li>
+				<li class="subMenu">
+					<a href="#siteWorks">作品</a>
+					<ul>
+						<li>键盘导航</li>
+						<li>canvas画板</li>
+						<li>其他</li>
+					</ul>
+				</li>
+				<li class="subMenu">
+					<a href="#">博客</a>
+					<ul>
+						<li>简书</li>
+						<li>GitHub</li>
+						<li>微博</li>
+					</ul>
+				</li>
 				<li><a href="#">日历</a></li>
 				<li><a href="#">联系方式</a></li>
 				<li><a href="#">其他</a></li>
@@ -39,7 +53,7 @@
 	<div class="banner">
 		<div class="mask"></div>
 	</div>
-	<main>
+	<main id="siteAbout">
 		<div class="userCard">
 			<div class="wrapCard clearfix">
 				<div class="img">
@@ -87,7 +101,7 @@
 			<p class="selfIntroduction">陈秋钿，来自广东工业大学，数字媒体技术<br>技能：前端开发 JavaScript 等</p>
 		</div>
 	</main>
-	<section class="skill">
+	<section id="siteSkills" class="skill">
 		<!-- 表示章节 -->
 		<h2>技能</h2>
 		<ol class="clearfix">
@@ -129,7 +143,7 @@
 			</li>
 		</ol>
 	</section>
-	<section class="portfolio">
+	<section id="siteWorks" class="portfolio">
 		<h2>作品集</h2>
 		<nav>
 			<ol class="clearfix">
