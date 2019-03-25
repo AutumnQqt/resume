@@ -22,19 +22,27 @@ li {
 }
 
 .topBarNav {
-	padding: 20px;
+	padding: 20px 30px;
 	position: fixed;
 	width: 100%;
 	box-sizing: border-box;
+	color: #b7b7b7;
+	transition: all .5s;
+}
+.topBarNav.sticky {
+	background: #fff;
+	padding: 15px;
+	color: #3d4451;
+	box-shadow: 0 0 23px 3px rgba(100, 100, 100, .5);
 }
 .topBarNav >nav {
 	float: right;
-	padding-top: 7px;
+	padding-top: 5px;
+	padding-right: 20px;
 }
 .topBarNav >nav >ul {
 	margin: 0;
 	padding: 0;
-	margin-top: 3px;
 }
 .topBarNav >nav >ul >li {
 	float: left;
@@ -42,7 +50,7 @@ li {
 }
 .topBarNav >nav >ul >li >a {
 	display: block;
-	color: #b7b7b7;
+	
 	font-size: 12px;
 	font-weight: bold;
 	border-bottom: 3px solid transparent;
