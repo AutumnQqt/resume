@@ -59,7 +59,8 @@ li {
 	border-top: 3px solid transparent;
 	padding: 5px 0;
 }
-.topBarNav >nav >ul >li.active>a::after {
+.topBarNav >nav >ul >li.active>a::after,
+.topBarNav >nav >ul >li.highLight>a::after {
 	content: '';
 	position: absolute;
 	top: 100%;
@@ -75,6 +76,13 @@ li {
 		width: 0;
 	}
 	100%{width: 100%;}
+}
+[data-X] {
+	margin-top: 150px !important;
+}
+[data-X].highLight {
+	margin-top: 0 !important;
+	transition: all 1s;
 }
 .topBarNav >nav >ul >.subMenu>ul {
 	display: none;
@@ -266,6 +274,7 @@ section.portfolio {
 	margin: 0 auto;
 	box-sizing: border-box;
 }
+
 section.skill h2,
 section.portfolio h2 {
 	text-align: center;
@@ -294,12 +303,18 @@ section.skill>ol>li .progressBar {
 	width: 100%;
 	background-color: #FAE1E1;
 	border-radius: 20px;
+	overflow: hidden;
 }
 section.skill>ol>li .progress {
 	height: 5px;
 	background-color: #E6686A;
 	width: 50%;
 	border-radius: 20px;
+	transform: translateX(-100%);
+}
+section.skill.highLight>ol>li .progress {
+	transform: translateX(0);
+	transition: all 1s;
 }
 
 section.portfolio nav {

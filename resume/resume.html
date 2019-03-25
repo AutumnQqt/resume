@@ -9,7 +9,7 @@
 		.loading::before,.loading::after {content: '';position: absolute;width: 0;height: 0;background: #666;border-radius: 50%;top: 0;left: 0;right: 0;bottom: 0;margin: auto;animation: s 1.5s linear infinite;}
 		.loading::after {animation-delay: .75s;}
 		@keyframes s{0% {width: 0px;height: 0px;opacity: 1;}100% {width: 100px;height: 100px;opacity: 0;}}
-		.siteWelcome {display: none;position: fixed;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;background: #ddd;z-index: 1;align-items: center;justify-content: center;}
+		.siteWelcome {display: none;position: fixed;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;background: #ddd;z-index: 2;align-items: center;justify-content: center;}
 		.siteWelcome.active {display: flex;}
 		.icon {width: 30px;height: 30px;fill: white;overflow: hidden;}
 	</style>
@@ -26,7 +26,7 @@
 		</a>
 		<nav id="topNav" class="topNav">
 			<ul class="clearfix">
-				<li><a href="#siteAbout">关于</a></li>
+				<li class="highLight"><a href="#siteAbout">关于</a></li>
 				<li><a href="#siteSkills">技能</a></li>
 				<li class="subMenu">
 					<a href="#siteWorks">作品</a>
@@ -53,7 +53,7 @@
 	<div class="banner">
 		<div class="mask"></div>
 	</div>
-	<main id="siteAbout">
+	<main data-x id="siteAbout">
 		<div class="userCard">
 			<div class="wrapCard clearfix">
 				<div class="img">
@@ -101,7 +101,7 @@
 			<p class="selfIntroduction">陈秋钿，来自广东工业大学，数字媒体技术<br>技能：前端开发 JavaScript 等</p>
 		</div>
 	</main>
-	<section id="siteSkills" class="skill">
+	<section data-x id="siteSkills" class="skill">
 		<!-- 表示章节 -->
 		<h2>技能</h2>
 		<ol class="clearfix">
@@ -143,7 +143,7 @@
 			</li>
 		</ol>
 	</section>
-	<section id="siteWorks" class="portfolio">
+	<section data-x id="siteWorks" class="portfolio">
 		<h2>作品集</h2>
 		<nav>
 			<ol class="clearfix">
