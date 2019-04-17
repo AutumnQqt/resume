@@ -3,102 +3,8 @@
 
 <head>
 	<title>陈秋钿的个人简历</title>
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" href="./css/swiper.min.css">
-	<style type="text/css">
-		.loading {
-			position: relative;
-			width: 200px;
-			height: 200px;
-		}
-
-		.loading::before,
-		.loading::after {
-			content: '';
-			position: absolute;
-			width: 0;
-			height: 0;
-			background: #666;
-			border-radius: 50%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-			animation: s 1.5s linear infinite;
-		}
-
-		.loading::after {
-			animation-delay: .75s;
-		}
-
-		@keyframes s {
-			0% {
-				width: 0px;
-				height: 0px;
-				opacity: 1;
-			}
-
-			100% {
-				width: 100px;
-				height: 100px;
-				opacity: 0;
-			}
-		}
-
-		.siteWelcome {
-			display: none;
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background: #ddd;
-			z-index: 2;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.siteWelcome.active {
-			display: flex;
-		}
-
-		.icon {
-			width: 30px;
-			height: 30px;
-			fill: white;
-			overflow: hidden;
-		}
-
-		.swiper-container {
-			width: 940px;
-			height: 705px;
-			box-shadow: 1px 1px 10px 0px rgba(107, 107, 107, 1);
-			overflow: initial;
-		}
-		.swiper-button-prev,
-		.swiper-button-next {
-			opacity: .5;
-			transition: all .5s;
-			width: 60px;
-			height: 60px;
-			background-color: rgba(230, 104, 106,.3);
-		}
-		.swiper-button-prev:hover,
-		.swiper-button-next:hover {
-			opacity: 1;
-			background-color: rgba(230, 104, 106,.8);
-			border-radius: 30%;
-		}
-		.swiper-button-prev {
-			left: -80px;
-		}
-		.swiper-button-next {
-			right: -80px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<script type="text/javascript" src="//at.alicdn.com/t/font_1044514_v6pvjhiz3x.js"></script>
 </head>
 
@@ -265,25 +171,10 @@
 	</section>
 </body>
 <script src="./js/Tween.js"></script>
-<script src="./js/main.js"></script>
+<script src="./js/windowSlide.js"></script>
+<script src="./js/siteWelcome.js"></script>
+<script src="./js/stickNavBar.js"></script>
 <script src="./js/swiper.min.js"></script>
-<script>
-	var mySwiper = new Swiper('.swiper-container', {
-		direction: 'horizontal',
-		loop: true,
-		keyboard: true,
-		spaceBetween: 30,
-		effect: 'fade',
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		}
-	})
-
-</script>
+<script src="./js/swiper.js"></script>
 
 </html>
