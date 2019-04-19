@@ -1,6 +1,18 @@
-setTimeout(function(){
-  siteWelcome.classList.remove('active')
-},1000)
-setTimeout(function(){
-  siteAbout.classList.add('highLight')
-},1100)
+!function(){
+  var view = document.querySelector('#siteWelcome')
+  var controller = {
+    view: null,
+    init: function(view){
+      this.view = view
+      this.bindEvents()
+    },
+    bindEvents: function(){
+      setTimeout(()=>{
+        this.view.classList.remove('active')
+      },1000)
+    }
+  }
+
+  controller.init(view)
+}()
+
