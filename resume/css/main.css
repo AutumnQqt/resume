@@ -454,7 +454,7 @@ section.portfolio .works > .small .small2 {
 	right: 0;
 	bottom: 0;
 	background: #ddd;
-	z-index: 2;
+	z-index: 3;
 	align-items: center;
 	justify-content: center;
 }
