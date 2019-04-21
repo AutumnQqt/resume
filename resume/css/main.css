@@ -28,7 +28,7 @@ li {
 	box-sizing: border-box;
 	color: #b7b7b7;
 	transition: all .5s;
-	z-index: 1;
+	z-index: 2;
 }
 .topBarNav.sticky {
 	background: #fff;
@@ -275,7 +275,8 @@ section.portfolio {
 }
 
 section.skill h2,
-section.portfolio h2 {
+section.portfolio h2,
+section.message h2 {
 	text-align: center;
 	font-size: 34px;
 	font-weight: bold;
@@ -287,7 +288,7 @@ section.skill>ol {
 	padding: 40px 33px 0;
 	margin: 30px 0 56px;
 	background: #fff;
-	box-shadow: 1px 1px 10px 0px rgba(107,107,107,1);
+	box-shadow: 1px 1px 10px 0px rgba(107,107,107,.5);
 }
 section.skill>ol>li {
 	float: left;
@@ -472,7 +473,7 @@ section.portfolio .works > .small .small2 {
 .swiper-container {
 	width: 940px;
 	height: 705px;
-	box-shadow: 1px 1px 10px 0px rgba(107, 107, 107, 1);
+	box-shadow: 1px 1px 10px 0px rgba(107, 107, 107, .5);
 	overflow: initial;
 }
 
@@ -498,4 +499,115 @@ section.portfolio .works > .small .small2 {
 
 .swiper-button-next {
 	right: -80px;
+}
+
+section.message{
+	width: 940px;
+	height: 500px;
+	margin: 0 auto;
+}
+section.message h3 {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 2;
+	color: rgb(163, 162, 162);
+	margin-bottom: 32px;
+}
+section.message>.messageWrap{
+	box-sizing: border-box;
+	background: rgb(248, 248, 248);
+	box-shadow: 1px 1px 10px 0px rgba(107, 107, 107, .5);
+	padding: 50px 20px 70px 20px;
+	margin-bottom: 200px;
+}
+section.message ul{
+	width: 750px;
+	margin: 0 auto;
+}
+section.message ul li{
+	border-bottom: 1px solid rgb(236,235,235);
+	padding: 13px;
+	margin: 20px 0;
+	line-height: 20px;
+	list-style-image:url("./../img/li.png");
+	list-style-position: inside;
+	list-style-type:square;
+	position: relative;
+}
+
+section.message ul li span.name {
+	position: absolute;
+	top: 12px;
+	left: 45px;
+	color: rgb(67, 71, 75);
+	font-size: 18px;
+}
+section.message ul li span.time {
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	font-size: 15px;
+	color: rgb(200,200,202);
+}
+section.message ul li span.mail {
+	display: block;
+	padding: 10px 0 0 46px;
+	color: rgb(143, 146, 153);
+	font-size: 14px;
+}
+section.message ul li span.content {
+	display: block;
+	padding: 16px 0 0 33px;
+	color: rgb(93, 95, 99);
+}
+
+
+section.message input,
+section.message textarea{
+	box-sizing: border-box;
+	border: none;
+	border: 1px solid rgb(236,235,235);
+	font-size: 15px;
+}
+section.message input:focus,
+section.message textarea:focus{
+	border: 1px solid rgb(255, 147, 149);
+	outline: rgb(255, 147, 149) auto 5px;
+}
+section.message input[type=text]{
+	width: 250px;
+	height: 41px;
+	padding-left: 10px;
+}
+section.message form {
+	margin-top: 50px;
+}
+section.message form > div{
+	width: 760px;
+	margin: 0 auto;
+}
+section.message textarea{
+	padding: 15px;
+	width: 760px;
+	height: 190px;
+	margin: 15px auto;
+	display: block;
+	resize: none;
+}
+section.message input[type=submit]{
+	width: 760px;
+	height: 52px;
+	display: block;
+	border: none;
+	background: rgb(255, 147, 149);
+	cursor: pointer;
+	color: whitesmoke;
+	font-size: 16px;
+	letter-spacing: 10px;
+	margin: 20px auto;
+	transition: all .5s;
+}
+section.message input[type=submit]:hover{
+	box-shadow: 0 0 8px 1px rgba(206, 169, 169, 0.5);
+	background: #E6686A;
 }

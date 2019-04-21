@@ -28,6 +28,7 @@
 						<li>其他</li>
 					</ul>
 				</li>
+				<li><a href="#messages">留言</a></li>
 				<li class="subMenu">
 					<a href="#">博客</a>
 					<ul>
@@ -36,7 +37,6 @@
 						<li>微博</li>
 					</ul>
 				</li>
-				<li><a href="#">日历</a></li>
 				<li><a href="#">联系方式</a></li>
 				<li><a href="#">其他</a></li>
 			</ul>
@@ -169,13 +169,31 @@
 			<div class="swiper-button-next swiper-button-black"></div>
 		</div>
 	</section>
+	<section data-x id="messages" class="message">
+		<h2>留言板</h2>
+		<h3>MESSAGE BOARD</h3>
+		<div class="messageWrap" id="messageWrap">
+			<ul id="messageShow"></ul>
+			<form id="messageForm">
+				<div>
+					<input type="text" placeholder="姓名" name="name">
+					<input type="text" placeholder="电话" name="phone">
+					<input type="text" placeholder="邮箱" name="mail">
+				</div>
+				<textarea name="messgerContrent" id=""></textarea>
+				<input type="submit" value="发送">
+			</form>
+		</div>
+	</section>
 </body>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
 <script src="./js/Tween.js"></script>
+<script src="./js/swiper.min.js"></script>
+<!-- 模块化 -->
 <script src="./js/navSlide.js"></script>
 <script src="./js/siteWelcome.js"></script>
 <script src="./js/stickNavBar.js"></script>
 <script src="./js/topNav.js"></script>
-<script src="./js/swiper.min.js"></script>
 <script src="./js/swiper.js"></script>
-
+<script src="./js/message.js"></script>
 </html>

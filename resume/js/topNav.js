@@ -1,27 +1,28 @@
 !function () {
-  var view = document.querySelectorAll('#topNav')
+  var view = document.querySelector('#topNav')
 
   var controller = {
     view: null,
     liTags: null,
+    dataX: null,
     init: function (view) {
       this.view = view
-      this.liTags = document.querySelectorAll('#topNav li')
+      this.liTags = view.querySelectorAll('li')
+      this.dataX = document.querySelectorAll('[data-x]')
+      this.initHighLight()
       this.bindEvents()
     },
     bindEvents: function () {
       let minIndex = 0
-      let dataX = document.querySelectorAll('[data-x]')
       window.onscroll = () => {
         let currentTop = window.scrollY
-
-        for (let i = 0; i < dataX.length; i++) {
-          if (Math.abs(currentTop - dataX[i].offsetTop) < Math.abs(currentTop - dataX[minIndex].offsetTop)) {
+        for (let i = 0; i < this.dataX.length; i++) {
+          if (Math.abs(currentTop - this.dataX[i].offsetTop) < Math.abs(currentTop - this.dataX[minIndex].offsetTop)) {
             minIndex = i
           }
         }
-        this.highLight(dataX[minIndex])
-        let aTag = document.querySelector('[href="#' + dataX[minIndex].id + '"]')
+        this.highLight(this.dataX[minIndex])
+        let aTag = document.querySelector('[href="#' + this.dataX[minIndex].id + '"]')
         for (let i = 0; i < this.liTags.length; i++) {
           this.unHighLight(this.liTags[i])
         }
@@ -30,10 +31,10 @@
 
 
       for (let i = 0; i < this.liTags.length; i++) {
-        this.liTags[i].onmouseenter = (event)=> {
+        this.liTags[i].onmouseenter = (event) => {
           this.active(event.currentTarget)
         }
-        this.liTags[i].onmouseleave = (event)=> {
+        this.liTags[i].onmouseleave = (event) => {
           this.unActive(event.currentTarget)
         }
       }
@@ -50,6 +51,11 @@
     },
     unHighLight: function (target) {
       target.classList.remove('highLight')
+    },
+    initHighLight: function () {
+      window.setTimeout(() => {
+        this.highLight(this.dataX[0])
+      }, 1100)
     }
   }
 
